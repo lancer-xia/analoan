@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
     		console.log(err);
     	} else {
     		console.log(JSON.stringify(result));
-    		res.render('index', { title: 'MySql query data test.', body: 'show this result' + JSON.stringify(result) });
+    		res.render('index', { title: 'MySql query data test.', body: 'show this result to me with gulp-livereload' + JSON.stringify(result) });
     	}
     });
 });
